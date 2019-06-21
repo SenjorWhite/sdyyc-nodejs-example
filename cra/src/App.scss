@@ -1,0 +1,11 @@
+.App > .button {
+    margin: 0 5px;
+    padding: 0 5px;
+    color: white;
+    text-decoration: none;
+    background-color: #392874;
+
+    &:hover {
+      background-color: #6652af;
+    }
+}
