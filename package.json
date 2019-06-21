@@ -1,7 +1,7 @@
 {
   "name": "sdyyc-nodejs-example",
   "version": "1.0.0",
-  "description": "Easy sample for introducing the basics of Node.js.",
+  "description": "An easy example for introducing the basics of Node.js.",
   "main": "/express/index.js",
   "scripts": {
     "start": "concurrently --kill-others \"cd express && node index.js\" \"cd cra && npm start\"",
