@@ -1,5 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function Members() {
-    return <div>Members</div>;
+class Members extends Component {
+    constructor() {
+        super();
+        this.state = {
+            members: []
+        }
+    }
+
+    renderMembers() {
+        return this.state.members.forEach((member, index) => {
+            return (
+                <div>
+                    Member ID: {member.id} / Member Name: {member.name}
+                </div>
+            )
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                Member List:
+                {this.renderMembers()}
+            </div>
+        );
+    }
 };
+
+export default Members;
