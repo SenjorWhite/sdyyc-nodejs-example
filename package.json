@@ -1,0 +1,18 @@
+{
+  "name": "sdyyc-nodejs-example",
+  "version": "1.0.0",
+  "description": "Easy sample for introducing the basics of Node.js.",
+  "main": "/express/index.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"cd express && node index.js\" \"cd cra && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Senjor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
